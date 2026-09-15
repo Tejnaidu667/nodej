@@ -60,3 +60,43 @@
 //     console.log(userdata);
 // });
 
+// console.log("line 1");
+// console.log("line 2");
+// setTimeout(function() {
+//     console.log("line 3");
+// }, 3000);
+// console.log("line 4");
+// console.log("line 5");
+
+// promises are used to handle asynchronous operations in JavaScript. They represent a value that may be available now, or in the future, or never.
+
+    // async function getuserdata() 
+    // {
+    //     const prom = new Promise(function(resolve, reject) {
+
+    //         let user = [{ name: "John", age: 20 }, { name: "Doe", age: 30 }];
+
+    //         if (user.length > 0) {
+    //             resolve(user);
+    //         } else {
+    //             reject("no data found");
+    //         }
+
+
+            
+    //     });
+
+    //     return prom;
+    // }   
+
+
+    // getuserdata()
+    // .then(function(user) {
+    //     console.log(user);
+    // })
+    // .catch(function(err) {
+    //     console.log(err);
+    // });
+    
+
+    
