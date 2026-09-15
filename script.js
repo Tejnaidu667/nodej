@@ -97,6 +97,43 @@
     // .catch(function(err) {
     //     console.log(err);
     // });
-    
 
-    
+    // from this we can use fetch api to get data from server but we can't see the data in console because it is asynchronous operation so we can use then and catch to see the data in console.     
+
+        // fetch("https://jsonplaceholder.typicode.com/comments")
+        // .then((response)=>{
+        //     console.log(response);
+        // })
+        // .catch((err)=>{
+        //     console.log(err);
+        // });
+
+// to see the data in console we can use json() method to convert the response to json format and then we can see the data in console.
+
+//    fetch("https://jsonplaceholder.typicode.com/comments")
+//         .then((response)=>{
+//             response.json()
+//             .then((data)=>{
+//                 console.log(data);
+//             })
+//             .catch((err)=>{
+//                 console.log(err);
+//             })
+//         })
+//         .catch((err)=>{
+//             console.log(err);
+//         });
+
+//other way to write the above code is to use async await to see the data in console.
+
+ fetch("https://jsonplaceholder.typicode.com/comments")
+        .then((response)=>{
+             return response.json();
+
+        })
+        .then((data)=>{
+            console.log(data);
+        })
+        .catch((err)=>{
+            console.log(err);
+        });
